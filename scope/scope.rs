@@ -1,4 +1,5 @@
-fn foo(){
+fn foo()
+{
     let example:i8 = 123;
     {
         let example:i8 = -123;
@@ -7,12 +8,14 @@ fn foo(){
     println!("foo: {} out", example);
 }
 
-fn bar(){
+fn bar()
+{
     let example:u8 = 111;
     println!("bar: {}", example);
 }
 
-fn main() {
+fn main() 
+{
     foo();
     bar();
 }
