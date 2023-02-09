@@ -23,4 +23,8 @@ fn main(){
 
     let variable_char:char = 'c';
     println!("variable_char = {}, size = {}", variable_char, std::mem::size_of_val(&variable_char));
+    let variable_char:char = 'b';
+    println!("variable_char = {}, size = {}", variable_char, std::mem::size_of_val(&variable_char));
+
+    println!("We can redeclare a variable");
 }
