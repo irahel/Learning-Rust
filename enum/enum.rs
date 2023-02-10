@@ -14,7 +14,8 @@ enum Color
     Red,
     Green,
     Blue,
-    RGB(u8, u8, u8)
+    RGB(u8, u8, u8),
+    CYMK{cyan:u8, magenta:u8, yellow:u8, black:u8}
 }
 
 fn print_color()
@@ -26,7 +27,8 @@ fn print_color()
         Color::Green => "Green",
         Color::Blue => "Blue",
         Color::RGB(0, 0, 0) => "Black",
-        Color::RGB(_, _, _) => "rgb"
+        Color::RGB(_, _, _) => "rgb",
+        Color::CYMK{cyan:_, magenta:_, yellow:_, black:_} => "cmyk"
     })
 
 }
