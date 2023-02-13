@@ -1,5 +1,4 @@
-fn main()
-{
+fn main() {
     println!("Exploring variables");
 
     let variable:i8 = 127;

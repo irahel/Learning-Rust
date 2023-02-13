@@ -1,14 +1,11 @@
-fn main()
-{
+fn main() {
     let age:u8 = 16;
     let auth:bool = true;
     let legal_age = age >= 18 || (age >= 16 && auth);
-    if legal_age
-    {
+    if legal_age {
         println!("You are old enough to party!");
     }
-    else
-    {
+    else {
         println!("You are not old enough to party!");
     }
 

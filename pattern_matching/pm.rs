@@ -1,9 +1,6 @@
-fn main()
-{
-    for i in 1..=21
-    {
-        println!("{}: {}", i, match i
-        {
+fn main() {
+    for i in 1..=21 {
+        println!("{}: {}", i, match i {
             1 => "one",
             2 => "two",
             3 => "three",
@@ -28,10 +25,8 @@ fn main()
         })
     }
 
-    for i in 1..=20
-    {
-        println!("{}: {}", i, match i
-        {
+    for i in 1..=20 {
+        println!("{}: {}", i, match i {
             1 | 2 => "low",
             3..=6 => "medium",
             7..=9 => "high",

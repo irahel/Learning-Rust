@@ -1,5 +1,4 @@
-fn sum(a:i32, b:i32) -> i32
-{
+fn sum(a:i32, b:i32) -> i32 {
     println!("a: {} + b: {} = {}", a, b, a+b);
 
     println!("The last expression is the return value, without ;");
@@ -8,8 +7,7 @@ fn sum(a:i32, b:i32) -> i32
     a + b
 }
 
-fn main()
-{
+fn main() {
     println!("By default functions dont return anything");
     println!("Sum = {}", sum(33, 36));
 }

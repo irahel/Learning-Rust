@@ -1,8 +1,6 @@
-fn main()
-{
+fn main() {
     let lang = "Rust";
-    let purpose = match lang
-    {
+    let purpose = match lang {
         "Rust" => "Systems Programming",
         "Python" => "Data Science",
         "Go" => "Cloud",

@@ -1,5 +1,4 @@
-enum Week
-{
+enum Week {
     Monday,
     Tuesday,
     Wednesday,
@@ -9,8 +8,7 @@ enum Week
     Sunday
 }
 
-enum Color
-{
+enum Color {
     Red,
     Green,
     Blue,
@@ -18,11 +16,9 @@ enum Color
     CYMK{cyan:u8, magenta:u8, yellow:u8, black:u8}
 }
 
-fn print_color()
-{
+fn print_color() {
     let c = Color::RGB(0, 0, 0);
-    println!("Color: {}", match c
-    {
+    println!("Color: {}", match c {
         Color::Red => "Red",
         Color::Green => "Green",
         Color::Blue => "Blue",
@@ -33,16 +29,15 @@ fn print_color()
 
 }
 
-fn is_weekday(day: Week) -> bool
-{
-    match day
-    {
+fn is_weekday(day: Week) -> bool {
+    match day {
         Week::Saturday | Week::Sunday => false,
         _ => true
     }
 }
 
-fn main()
-{
-
+fn main() {
+    print_color();
+    println!("Is Monday a weekday? {}", is_weekday(Week::Monday));
+    println!("Is Sunday a weekday? {}", is_weekday(Week::Sunday));
 }

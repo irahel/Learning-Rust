@@ -1,5 +1,4 @@
-fn main()
-{
+fn main() {
     println!("Arrays are fixed length lists of values of the same type");
     println!("Arrays have a iterator");
     let grades: [f32; 4] = [10.0, 8.0, 9.5, 6.0];
@@ -8,13 +7,11 @@ fn main()
     println!("The third grade is {}", grades[2]);
     println!("The fourth grade is {}", grades[3]);
 
-    for grade in grades
-    {
+    for grade in grades {
         println!("The grade is {}", grade);
     }
 
-    for i in 0..grades.len()
-    {
+    for i in 0..grades.len() {
         println!("The grade at index {} is {}", i, grades[i]);
     }
 
@@ -29,10 +26,8 @@ fn main()
         [1.3, 0.3, 1.4]
     ];
 
-    for line in matrix
-    {
-        for value in line
-        {
+    for line in matrix {
+        for value in line {
             print!("{} ", value);
         }
         println!("");

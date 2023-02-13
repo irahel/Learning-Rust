@@ -1,23 +1,19 @@
-fn steals(s:String)
-{
+fn steals(s:String) {
     println!("I stole {}", s);
 }
 
-fn steals_ref(s:&String)
-{
+fn steals_ref(s:&String) {
     println!("References are immutable by default");
     println!("I not stole {}", s);
 }
 
-fn steals_ref_and_change(s:&mut String)
-{
+fn steals_ref_and_change(s:&mut String) {
     println!("But we can use functions if mut is specified");
     s.push_str(" is my name");
     println!("I not stole {}", s);
 }
 
-fn main()
-{
+fn main() {
     println!("Stack allocated string");
     let str_s = "Rahel";
 
