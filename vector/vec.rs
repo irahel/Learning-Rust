@@ -9,6 +9,14 @@ fn grades(){
 
     println!("Grades: {:?}", grades_vec);
     println!("Grades from macro: {:?}", grades_vec_from_macro);
+
+    println!("Grade at index 0: {}", grades_vec[0]);
+
+    //uses a match expression to handle the case where the index is out of bounds
+    println!("Grade at index 3: {}", match grades_vec.get(3){
+        Some(grade) => grade,
+        None => &0
+    });
 }
 
 fn main(){
