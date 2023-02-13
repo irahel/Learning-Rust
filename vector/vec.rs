@@ -4,7 +4,12 @@ fn grades(){
 
     let grades_vec_from_macro = vec![10, 8, 10];
     grades_vec.push(10);
+    grades_vec.push(9);
     grades_vec.push(8);
+    grades_vec.push(7);
+    grades_vec.push(6);
+    grades_vec.push(5);
+    grades_vec.push(4);
     //grades_vec.push(10.1); //error: mismatched types
 
     println!("Grades: {:?}", grades_vec);
@@ -17,6 +22,18 @@ fn grades(){
         Some(grade) => grade,
         None => &0
     });
+
+    for grade in &grades_vec{
+        println!("[For]:Grade: {}", grade);
+    }
+
+    //pop returns the last element of the vector in a Option, and removes it
+    println!("Popped grade: {}", grades_vec.pop().unwrap());
+
+    while let Some(grade) = grades_vec.pop(){
+        println!("[While]:Grade: {}", grade);
+    }
+
 }
 
 fn main(){
