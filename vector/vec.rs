@@ -1,7 +1,7 @@
 fn grades(){
     //create a vector of u8
     let mut grades_vec:Vec<u8> = Vec::new();
-
+    let grades_with_capacity = Vec::with_capacity(10);
     let grades_vec_from_macro = vec![10, 8, 10];
     grades_vec.push(10);
     grades_vec.push(9);
